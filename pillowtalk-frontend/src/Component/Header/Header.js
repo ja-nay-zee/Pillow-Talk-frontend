@@ -6,7 +6,7 @@ function Header(){
     <div>
 
     <h1>PilowTalk</h1>
-    <img src="https://www.vhv.rs/dpng/d/118-1189537_clouds-png-animated-cute-cartoon-cloud-png-transparent.png" alt="header_pic"/>
+    <img src="https://www.vhv.rs/dpng/d/512-5121980_nuvem-kawaii-white-night-drawning-cute-cloud-png.png" alt="header_pic"/>
      
      <Navbar />
 
