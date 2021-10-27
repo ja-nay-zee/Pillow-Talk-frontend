@@ -8,8 +8,8 @@ function Header(){
 
     <h1 id="headerTitle">PillowTalk</h1>
     {/* <img src="https://www.vhv.rs/dpng/d/512-5121980_nuvem-kawaii-white-night-drawning-cute-cloud-png.png" alt="header_pic"/> */}
-     
-     <Navbar />
+    
+      <Navbar />
 
     </div>
   );

@@ -20,7 +20,7 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <HashRouter>
     <React.StrictMode>
-     <App />
+      <App />
     </React.StrictMode>
   </HashRouter>,
   document.getElementById("root")
