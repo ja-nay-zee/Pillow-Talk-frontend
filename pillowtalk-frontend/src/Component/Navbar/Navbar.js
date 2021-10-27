@@ -4,11 +4,11 @@ import "./Navbar.style.css";
 
 function Navbar(){
   return(
-    <nav className="navBar">
-    <NavLink className="homeNav" exact to="/">Home</NavLink>
-    <NavLink className="aboutUsNav" to="/aboutus">About Us</NavLink>
-    <NavLink className="publicDreamsNav" to="/publicdreams">Public Dreams</NavLink>
-    <NavLink className="signInNav" to="/loginlogout">SignIn</NavLink>
+    <nav id="navBar">
+     <NavLink className="homeNav" exact to="/">Home</NavLink>
+     <NavLink className="aboutUsNav" to="/aboutus">About Us</NavLink>
+     <NavLink className="publicDreamsNav" to="/publicdreams">Public Dreams</NavLink>
+     <NavLink className="signInNav" to="/loginlogout">SignIn</NavLink>
     </nav>
   );
 }

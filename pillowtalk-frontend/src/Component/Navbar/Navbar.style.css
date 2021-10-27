@@ -6,4 +6,39 @@
     justify-content:space-between;
 }  */
 
+/* #navBar:link{
+    color: red;
+    text-decoration: none;
+} */
 
+.homeNav{
+    color: #34a0a4;
+    text-decoration: none;
+    position: absolute;
+    top: 45px;
+    right: 340px;
+}
+
+.aboutUsNav{
+    color: #34a0a4;
+    text-decoration: none;
+    position: absolute;
+    top: 45px;
+    right: 240px;
+}
+
+.publicDreamsNav{
+    color: #34a0a4;
+    text-decoration: none;
+    position: absolute;
+    top: 45px;
+    right: 110px;
+}
+
+.signInNav{
+    color: #34a0a4;
+    text-decoration: none;
+    position: absolute;
+    top: 45px;
+    right: 35px;
+}
