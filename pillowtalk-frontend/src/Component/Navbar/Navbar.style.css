@@ -16,7 +16,12 @@
     text-decoration: none;
     position: absolute;
     top: 45px;
-    right: 340px;
+    right: 350px;
+    font-size: 20px;
+}
+
+.homeNav:hover{
+    color: black;
 }
 
 .aboutUsNav{
@@ -24,7 +29,12 @@
     text-decoration: none;
     position: absolute;
     top: 45px;
-    right: 240px;
+    right: 245px;
+    font-size: 20px;
+}
+
+.aboutUsNav:hover{
+    color: black;
 }
 
 .publicDreamsNav{
@@ -32,7 +42,12 @@
     text-decoration: none;
     position: absolute;
     top: 45px;
-    right: 110px;
+    right: 105px;
+    font-size: 20px;
+}
+
+.publicDreamsNav:hover{
+    color: black;
 }
 
 .signInNav{
@@ -41,4 +56,9 @@
     position: absolute;
     top: 45px;
     right: 35px;
+    font-size: 20px;
+}
+
+.signInNav:hover{
+    color: black;
 }
