@@ -1,0 +1,15 @@
+#list{
+    list-style-type: none;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #34a0a4;
+    margin-left: 900px;
+    margin-top: -520px;
+    position:sticky;
+    overflow: auto;
+}
+
+/* .list-scrollbar-thumb {
+        background: yellowgreen;  
+        border-radius: 10px;
+} */

@@ -10,7 +10,6 @@ import LoginLogout from './Components/LogIn_LogOut/LogIn_LogOut.js';
 
 
 function App() {
-    
 
     return(
     <div className="App"> 
