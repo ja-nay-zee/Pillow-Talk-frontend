@@ -10,10 +10,9 @@ function AboutUs(){
      <img id="londonpic"src="https://i.imgur.com/Xjas03d.png" alt="londonpic"/>
 
      <img id="yaneizypic"src="https://i.imgur.com/BT5mZXv.jpg" alt="yaneizypic"/>
-    
      
      <h1 id="header2">What is PillowTalk?</h1> 
-     <p id="description">PillowTalk is the best free journal entry app that enables you to write down your dreams before they become vague memories. You can secure your dreams, thoughts, emotions, with this 3 in 1 app which is a journal, a diary, and a note-taking tool. There are many reasons to use PillowTalk and the most important one is that a journal is a private space of yours where you can write whatever you want to!</p>
+     <p id="description">PillowTalk is the best free journal entry app that enables you to write down your dreams before they become vague memories. You can secure your dreams, thoughts, emotions, with this 3 in 1 app which is a journal, a diary, and a note-taking tool. There are many reasons to use PillowTalk and the most important one is that a dream entry is a private space of yours where you can write whatever dream you want to!</p>
 
      <h1 id="header3">FAQs:</h1> 
      <h2 id="question1">Is my account protected?</h2>
