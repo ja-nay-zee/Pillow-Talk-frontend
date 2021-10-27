@@ -2,7 +2,10 @@ import React from 'react';
 
 function LoginLogout(){
   return(
-    <div>LogIn and LogOut</div>
+    <div>
+        <h1>Sign Up</h1> 
+       <p>WHAT?!?! YOU'RE NOT SIGNED UP TO OUR APP???</p>
+    </div>
 
 
   );
