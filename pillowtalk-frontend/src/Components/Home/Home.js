@@ -4,6 +4,7 @@ import "./Home.style.css";
 
 
 
+
 function Home(){
   const [dreams, setDreams] = useState([]);
 
@@ -29,6 +30,7 @@ function Home(){
       <h1>Welcome to PillowTalk!</h1>
       <p>This is the home page and you get to write out your dreams!</p>
       <button id="createButton" onClick={ createButton }>Create a Dream Entry</button>
+      {/* <button id="createButton" onClick={()=> CreateDream.push('./') }>Create a Dream Entry</button> */}
       <button id="viewButton" onClick={ viewButton }>View Drafts</button>
 
       <li className="instructions">
