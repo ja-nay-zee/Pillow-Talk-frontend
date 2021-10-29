@@ -1,11 +1,12 @@
 import React from "react";
-import { Switch, Route, Redirect, useHistory } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar.js';
 import Home from './Components/Home/Home.js';
 import AboutUs from './Components/AboutUs/AboutUs.js';
 import Signup from './Components/Signup/SignUp.js';
 import Login from './Components/Login/Login.js';
 import Logout from './Components/Logout/Logout.js'; 
+import EditDreams from "./Components/EditDream/EditDream.js";
 
 function AuthenticatedApp({ currentUser, setCurrentUser, handleLogout }) {
 
@@ -24,6 +25,9 @@ function AuthenticatedApp({ currentUser, setCurrentUser, handleLogout }) {
                 </Route>
                 <Route exact path="/signup">
                     <Signup />
+                </Route>
+                <Route exact path="/editDream">
+                    <EditDreams />
                 </Route>
                 <Route exact path= "/">
                     <Login setCurrentUser={setCurrentUser} />

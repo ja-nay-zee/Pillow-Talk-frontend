@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 
 
-function CreateDream({ currentUser, handleCreateDream, dreamData, setDreamData}){
+function CreateDream({ handleCreateDream, dreamData, setDreamData}){
+
     function handleChange(e){
         setDreamData({ ...dreamData, [e.target.name]: e.target.value });
     }

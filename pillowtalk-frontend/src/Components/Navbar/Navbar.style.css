@@ -37,7 +37,7 @@
     color: black;
 }
 
-.publicDreamsNav{
+.logoutNav{
     color: #34a0a4;
     text-decoration: none;
     position: absolute;
@@ -46,7 +46,7 @@
     font-size: 20px;
 }
 
-.publicDreamsNav:hover{
+.logoutNav:hover{
     color: black;
 }
 
@@ -62,3 +62,24 @@
 .signInNav:hover{
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

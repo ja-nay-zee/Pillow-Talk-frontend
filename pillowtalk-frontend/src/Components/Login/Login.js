@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import "./Login.style.css";
 
 function Login({setCurrentUser}){
     const [username, setUsername] = useState("")
@@ -35,7 +36,7 @@ function Login({setCurrentUser}){
 
     return(
         <div>
-            <form onSubmit={handleSubmitSignIn}>    
+            <form id="loginForm" onSubmit={handleSubmitSignIn}>    
                 <input
                     placeholder="Username"
                     name="username"
@@ -52,14 +53,14 @@ function Login({setCurrentUser}){
                     onChange={e => setPassword(e.target.value)}
                     required
                 />
-                <i onClick={togglePasswordVisiblity}>view</i>
+                <i id="view" onClick={togglePasswordVisiblity}>view 👁️</i>
                 <div className="auth__form-container_fields-content_button">
-                    <button type="submit">Sign In</button>
+                    <button id="signInButton"type="submit">Sign In</button>
                 </div>
             </form>
-            <div className="auth__form-container_fields-account">
-            <p>Need to create a new account?</p>
-            <Link to="/signup"><em> Sign Up </em></Link>
+            <div id="auth__form-container_fields-account">
+            <p id="aboveSignUp">Need to create a new account?</p>
+            <Link to="/signup"><em id="signUp"> Sign Up </em></Link>
             </div>
         </div>
         
