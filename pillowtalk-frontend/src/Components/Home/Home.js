@@ -24,6 +24,10 @@ function Home(){
     alert ('I was clicked woohoo!')
   }
   
+  function handleOnDelete(id){
+    const updatedDreamsArray = dreams.filter(dream => dream.id !== id);
+    setDreams(updatedDreamsArray)
+  }
 
   return(
     <div>
@@ -42,7 +46,7 @@ function Home(){
           <img id ="instructionsImg" src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" />
       </li>
 
-      <DreamsList dreams={dreams} />
+      <DreamsList dreams={dreams} handleOnDelete={handleOnDelete}/>
     </div>
   );
 }

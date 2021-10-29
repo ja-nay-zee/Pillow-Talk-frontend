@@ -7,6 +7,7 @@ import Home from './Components/Home/Home.js';
 import AboutUs from './Components/AboutUs/AboutUs.js';
 import PublicDreams from './Components/PublicDreams/PublicDreams.js';
 import LoginLogout from './Components/LogIn_LogOut/LogIn_LogOut.js';
+import CreateDream from './Components/CreateDream/CreateDream';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
       </Route>
       <Route path="/loginlogout">
         <LoginLogout />
+      </Route>
+      <Route path="/createdream">
+        <CreateDream />
       </Route>
       <Route exact path="/">
         <Home />

@@ -9,6 +9,7 @@ function Navbar(){
       <NavLink className="aboutUsNav" to="/aboutus">About Us</NavLink>
       <NavLink className="publicDreamsNav" to="/publicdreams">Public Dreams</NavLink>
       <NavLink className="signInNav" to="/loginlogout">SignIn</NavLink>
+      <NavLink className="createDreamNav" to="/createdream">Create a Dream</NavLink>
     </nav>
   );
 }

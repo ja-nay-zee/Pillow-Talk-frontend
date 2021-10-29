@@ -2,74 +2,90 @@ import React, { useState } from "react";
 
 
 function CreateDream(){
-    const [createData, setCreateData] = useState(initialDream)
- 
-    const initialDream = {
+    const currentUser = {id:1}
+
+    const initialDream = ({
         name: "",
         date: "",
         description:"",
-        mood: "",
         rating: 0,
+        mood: "",
         image_url: "",
-        user_id: [currentUser.id]
-    }
+        user_id: 1
+    })
 
-    const currentUser = {id:1}
-
+    const [createData, setCreateData] = useState(initialDream)
 
     function handleCreateData(e){
         e.preventDefault();
-        fetch('https://damp-beach-45746.herokuapp.com/dreams',{
+        console.log("sending dream");
+        fetch("https://damp-beach-45746.herokuapp.com/dreams", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(createData)
     })
+       .then(r => r.json())
+       .then(data => console.log(data))
+       .catch(err => console.log("error:", err))
+
     }
 
- return(
-     <form onSubmit={handleCreateData} >
-         {/* <h1 id="submitHeader">Submit A New Flower!</h1>
-            <img className="submitImage"src={pictureURL === "" ? "https://i.imgur.com/CBtjmX0.png" : pictureURL } alt="flower" />
-        
-        
-            <div className="input-container"> 
-                <label className="nameForm">Name of Flower:</label>
-                <input type="text" id="nameBox" name="name" value={formData.name} onChange={handleChange}></input>
-            </div>
-            <div className="input-container"> 
-                <label id="colorForm">Color: </label>
-                <input type="text" id="colorBox" name="color" value={formData.color} onChange={handleChange}></input>
-            </div> 
-        
-            <div className="input-container"> 
-                <label id="urlForm">Url Image: </label>
-                <input type="text" id="image_urlBox" name="image_url" value={formData.image_url} onChange={handleChange}></input>
-            </div>
-            <div className="input-container"> 
-                <label id="seasonForm">Season: </label>
-                <input type="text" id="seasonBox" name="season" value={formData.season} onChange={handleChange}></input>
-            </div>
-            <div className="input-container"> 
-                <label id="priceForm">Price: </label>
-                <input type="number" id="priceBox" name="price" value={formData.price} onChange={handleChange}></input>
-            </div>
-            <div className="input-container"> 
-                <label id="quantityForm">Quantity: </label>
-                <input type="number"id="quantityBox" name="quantity" value={formData.quantity} onChange={handleChange}></input>
-            </div>
-            <div className="input-container"> 
-                <label id="descriptionForm">Description: </label>
-                <textarea type="text" id="descriptionBox" name="description" value={formData.description} onChange={handleChange}></textarea>
-            </div>
-        
-            <div class="input-container">
-                <input type="submit" value="Add To List" /> */}
-     </form>
-   
+    function handleChange(e){
+        setCreateData({ ...createData, [e.target.name]: e.target.value });
+      }
+    
+    
+
+   return( 
+         <form onSubmit={handleCreateData}>
+             <h1 id="submitHeader">Create a Dream  Entry</h1>
+             <input
+               type="text"
+               name="name"
+               placeholder="Name"
+               value={createData.name}
+               onChange={handleChange}
+              />
+             <input
+               type="date"
+               name="date"
+               placeholder="Date"
+               value={createData.date}
+               onChange={handleChange}
+              />
+              <textarea
+               type="text"
+               name="description"
+               placeholder="Description"
+               value={createData.description}
+               onChange={handleChange}
+              />
+              <input
+               type="number"
+               name="rating"
+               placeholder="Rating"
+               value={createData.rating}
+               onChange= {(e) => setCreateData({...createData, rating: parseInt(e.target.value)})}
+              />
+              <input
+               type="text"
+               name="mood"
+               placeholder="Mood"
+               value={createData.mood}
+               onChange={handleChange}
+              />
+              <input
+               type="text"
+               name="image_url"
+               placeholder="Image Link"
+               value={createData.image_url}
+               onChange={handleChange}
+              />
+             <button type="Submit">Create</button>
+         </form>
  );
 }
-
 
 export default CreateDream;
