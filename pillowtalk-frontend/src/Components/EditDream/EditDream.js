@@ -91,8 +91,8 @@ function EditDreams({ setIsEditing, currentUser, dreams }){
                     />
                 </div>
                <button id="submitButton"type="Submit">Submit Changes</button>
+               <button id="cancelButton" key={dreams.id} type="button" onClick={() => setIsEditing(false)}>Cancel</button>
             </form>
-            <button id="cancelButton"key={dreams.id} type="button" onClick={() => setIsEditing(false)}>Cancel</button>
         </div>
     );
 }
