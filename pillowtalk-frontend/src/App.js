@@ -1,38 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
-import React from 'react';
-import { Route, Switch } from "react-router-dom";
+import React, {useEffect, useState} from 'react';
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from './Components/Header/Header.js';
-import Home from './Components/Home/Home.js';
-import AboutUs from './Components/AboutUs/AboutUs.js';
-import PublicDreams from './Components/PublicDreams/PublicDreams.js';
-import LoginLogout from './Components/LogIn_LogOut/LogIn_LogOut.js';
-import CreateDream from './Components/CreateDream/CreateDream';
+
+
+
+import AuthenticatedApp from "./AuthenticatedApp"
+import UnauthenticatedApp from './UnauthenticatedApp';
 
 
 function App() {
+  const [currentUser, setCurrentUser] = useState(null)
+  const [authCheck, setAuthCheck] = useState(false)
+
+  useEffect(() => {
+    fetch("https://damp-beach-45746.herokuapp.com/me", {
+    }).then((res) => {
+      if (res.ok) {
+        res.json().then((user) => {
+          setCurrentUser(user);
+          setAuthCheck(true);
+        });
+      } else {
+        setAuthCheck(true);
+      }
+    });
+  }, []);
+
+  if (!authCheck) {
+    return <div></div>;
+  }
 
     return(
-    <div className="App"> 
-    <Header />
-    <Switch>
-      <Route path="/aboutus">
-        <AboutUs />
-      </Route>
-      <Route path="/publicdreams">
-        <PublicDreams />
-      </Route>
-      <Route path="/loginlogout">
-        <LoginLogout />
-      </Route>
-      <Route path="/createdream">
-        <CreateDream />
-      </Route>
-      <Route exact path="/">
-        <Home />
-      </Route>
-    </Switch>
-    </div>
+    <Router>
+      <Header />
+        {currentUser ? (
+          <AuthenticatedApp currentUser={currentUser} setCurrentUser={setCurrentUser}/>
+        ) : (
+          <UnauthenticatedApp setCurrentUser={setCurrentUser}/>
+        )}
+      </Router>
   );
 }
 

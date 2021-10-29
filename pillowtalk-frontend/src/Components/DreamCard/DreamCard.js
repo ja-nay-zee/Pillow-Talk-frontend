@@ -2,7 +2,6 @@ import React from "react";
 import "./DreamCard.style.css"
 
 function DreamCard({ dream, handleOnDelete }){
-    // console.log(dream);
     const { id, name, date, description, image_url, mood, rating } = dream;
 
     function handleDeleteClick(){
@@ -12,8 +11,6 @@ function DreamCard({ dream, handleOnDelete }){
       })
       handleOnDelete(id)
     }
-
-
 
     return(
       <div>
@@ -25,11 +22,9 @@ function DreamCard({ dream, handleOnDelete }){
           <p>Dream Rating: {rating}</p>
           <img id ="dreamImgs" src={image_url} />
         </li>
-       <button onClick={handleDeleteClick}> Delete </button>
+        <button onClick={handleDeleteClick}> Delete </button>
       </div>
     )
 }
 
-
 export default DreamCard;
-
