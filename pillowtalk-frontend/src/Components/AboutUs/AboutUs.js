@@ -4,7 +4,7 @@ import "./AboutUs.style.css";
 function AboutUs(){
   return(
     <div>
-      <h1 id="header1">Who Created PilowTalk?</h1> 
+      <h1 id="header1">Who Created PillowTalk?</h1> 
       <p id="creators">London Rosemary and Yaneizy Castillo are the creators of PillowTalk! They are two Flatiron School students, who were required to create a project for phase 4 incorporating Ruby on Rails and React JavaScript. The back-end is solely based on Ruby on Rails and the front-end is React JavaScript. It took them a total of 4 days to complete this!</p>
 
       <img id="londonpic"src="https://i.imgur.com/Xjas03d.png" alt="londonpic"/>
@@ -30,7 +30,7 @@ function AboutUs(){
       <h2 id="thankyou"> Thank you for using our app! </h2>
       <h3 id="end">Happy dreaming…unless they’re nightmares! -London Rosemary and Yaneizy Castillo </h3>
 
-      <img id="aboutUsLogo"src="https://www.pngitem.com/pimgs/m/5-57285_dream-cloud-rain-free-picture-dream-hd-png.png" alt="aboutUsLogo"/>
+      <img id="aboutUsLogo"src="https://image.freepik.com/free-vector/evening-cloudy-sky-purple-background-with-group-cumulus-cirrus-clouds-flat-cartoon-illustration_1284-62768.jpg" alt="aboutUsLogo"/>
     </div> 
   );
 }

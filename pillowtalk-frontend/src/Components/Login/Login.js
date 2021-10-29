@@ -36,8 +36,10 @@ function Login({setCurrentUser}){
 
     return(
         <div>
+            {/* <img id="logInPic" src="https://image.freepik.com/free-vector/clouds-background-with-stars-text-soace_1017-25499.jpg" alt="logInPic"/> */}
             <form id="loginForm" onSubmit={handleSubmitSignIn}>    
                 <input
+                    className="username"
                     placeholder="Username"
                     name="username"
                     type="username"
@@ -46,6 +48,7 @@ function Login({setCurrentUser}){
                     required
                 />
                 <input
+                    className="password"
                     placeholder="Password"
                     name="password"
                     type={passwordShown ? "text" : "password"}

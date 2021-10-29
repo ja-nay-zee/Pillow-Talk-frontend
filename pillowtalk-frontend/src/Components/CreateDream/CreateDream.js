@@ -1,4 +1,6 @@
 import React from "react";
+import "./CreateDream.style.css"
+
 
 
 function CreateDream({ handleCreateDream, dreamData, setDreamData}){
@@ -54,7 +56,7 @@ function CreateDream({ handleCreateDream, dreamData, setDreamData}){
                 value={dreamData.image_url}
                 onChange={handleChange}
             />
-            <button type="Submit">Create</button>
+            <button id="createButton" type="Submit">Create</button>
         </form>
     );
 }

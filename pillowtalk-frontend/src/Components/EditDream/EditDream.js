@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./EditDream.style.css"
 
 function EditDreams({ setIsEditing, currentUser, dreams }){
 //  console.log(dreams.id)
@@ -43,7 +44,7 @@ function EditDreams({ setIsEditing, currentUser, dreams }){
 
     return(
         <div>
-            <form onSubmit={handleOnSubmit}>
+            <form className="updateForm"onSubmit={handleOnSubmit}>
                 <div className="updateDream">
                      <h1 id="submitHeader">Update This Dream Entry</h1>
                      <input
@@ -89,9 +90,9 @@ function EditDreams({ setIsEditing, currentUser, dreams }){
                         onChange={handleChange}
                     />
                 </div>
-               <button type="Submit">Submit Changes</button>
+               <button id="submitButton"type="Submit">Submit Changes</button>
             </form>
-            <button key={dreams.id} type="button" onClick={() => setIsEditing(false)}>Cancel</button>
+            <button id="cancelButton"key={dreams.id} type="button" onClick={() => setIsEditing(false)}>Cancel</button>
         </div>
     );
 }

@@ -50,8 +50,8 @@ function DreamCard({ dream, handleOnDelete, setIsEditing, currentUser }){
           <p>Dream Rating: {rating}</p>
           <img id ="dreamImgs" src={image_url} />
         </li>
-        <button onClick={handleDeleteClick}> Delete </button>
-        <button onClick={handleClick} > Edit Dream </button>
+        <button id="deleteButton" onClick={handleDeleteClick}> Delete </button>
+        <button id="editDreamButton" onClick={handleClick} > Edit Dream </button>
       </div>
     )
 }

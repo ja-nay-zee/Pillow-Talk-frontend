@@ -2,11 +2,12 @@
     list-style-type: none;
     width: 500px;
     max-height: 500px;
-    border: 10px solid #34a0a4;
+    border: 10px solid #ac6dff;;
     margin-left: 900px;
     margin-top: -420px;;
     position:sticky;
     overflow: auto;
+    background-color: #c3c8fd;
 }
 
 /* .list-scrollbar-thumb {

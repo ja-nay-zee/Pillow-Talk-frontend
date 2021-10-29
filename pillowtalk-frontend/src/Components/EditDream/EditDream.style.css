@@ -1,37 +1,41 @@
-#dreamImgs{
-    max-width: 250px;
-    max-height: 250px;
+.updateForm{
+    background-color: c3c8fd;
+    border: 6px solid #ac6dff;
+    margin-top: -28%;
+    margin-left: 60%;
 }
 
-#editDreamButton{
-    font-size: 10px;
+#submitButton{
+    font-size: 13px;
     /* margin-top: 5%;
     margin-left: 26%; */
     /* position: absolute; */
     border-radius: 5px;
     box-shadow: 0 4px rgb(145 143 143);
     z-index: 6;
-    width: 15%;
+    width: 35%;
 }
 
-#editDreamButton:hover{
+#submitButton:hover{
     background-color: #ac6dff;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#deleteButton{
-    font-size: 10px;
+#cancelButton{
+    font-size: 13px;
     /* margin-top: 5%;
     margin-left: 26%; */
     /* position: absolute; */
     border-radius: 5px;
     box-shadow: 0 4px rgb(145 143 143);
     z-index: 6;
-    width: 15%;
+    width: 5%;
+    margin-left: 74%;
+    margin-bottom: -30%
 }
 
-#deleteButton:hover{
+#cancelButton:hover{
     background-color: #ac6dff;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

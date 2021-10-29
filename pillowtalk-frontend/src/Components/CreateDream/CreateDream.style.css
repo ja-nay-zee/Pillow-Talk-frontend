@@ -1,0 +1,25 @@
+/* .createDreamForm{
+    background-color: #98a0f8;
+    height: 350px;
+    position: relative;
+
+
+} */
+
+#createButton{
+    font-size: 13px;
+    /* margin-top: 5%;
+    margin-left: 26%; */
+    /* position: absolute; */
+    border-radius: 5px;
+    box-shadow: 0 4px rgb(145 143 143);
+    z-index: 6;
+    width: 35%;
+    margin-top: 0.9%;
+  }
+  
+  #createButton:hover{
+    background-color: #ac6dff;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
